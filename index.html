@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Screen (shown if no user is logged in) -->
+    <div id="login-screen" class="container">
+        <h2>Welcome to the Quiz App</h2>
+        <input id="usernameInput" type="text" placeholder="Enter your name" />
+        <button id="loginButton">Login</button>
+    </div>
+
+    <!-- Quiz Screen (hidden until user logs in) -->
+    <div id="quiz-screen" class="container" style="display:none;">
+        <!-- Greeting and Logout -->
+        <h2 id="welcomeMessage"></h2>
+        <button id="logoutButton">Logout</button>
+
+        <!-- Question and answer options -->
+        <div id="questionContainer">
+            <div id="question"></div>
+            <div id="options"></div>
+        </div>
+
+        <!-- Feedback (correct/incorrect) and score display -->
+        <div id="feedback"></div>
+        <div id="scoreContainer">Score: <span id="score">0</span></div>
+
+        <!-- Next Question button -->
+        <button id="nextButton" style="display:none;">Next Question</button>
+    </div>
+
+    <!-- Include the JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+</html>
