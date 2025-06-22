@@ -157,4 +157,3 @@ function endQuiz() {
     nextButton.style.display = "none";
     // Optionally, reset or allow restart here
 }
-
